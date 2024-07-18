@@ -3,3 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    padding: 20px 0;
+    background-color: rgb(121, 149, 160);
+    color: #fff;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    width: 1200px;
+    margin: 50px auto;
+    height: 600px;
+    background-color: rgb(121, 149, 160);
+}
+
+ul li {}
