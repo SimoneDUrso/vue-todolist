@@ -44,10 +44,10 @@ createApp({
     },
 
     methods: {
-        todoBarred(index) {
-            this.todos[index].done = true;
-            console.log(this.todos[index].done)
-        },
+        // todoBarred(index) {
+        //     this.todos[index].done = true;
+        //     console.log(this.todos[index].done)
+        // },
 
         deleteTodo(index) {
             if (confirm("Sei sicuro di voler eliminare questa Todo?")) {
@@ -62,6 +62,15 @@ createApp({
             }
             this.todos.push(emptyObject)
             this.newTodo = null
+        },
+
+        changeDone(i) {
+            if (this.todos.done) {
+                this.todos[i].done = !this.todos[i].done
+            }
+            else {
+                this.todos[i].done = !this.todos[i].done
+            }
         }
     }
 }).mount("#app")
