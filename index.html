@@ -33,11 +33,16 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="list-unstyled">
-                            <li v-for="todo, index in todos">
-                                <div> {{ todo.text }} </div>
+                            <li class="d-flex justify-content-between my-5 text-white bb-white"
+                                v-for="todo, index in todos">
+                                <div :class="todos[index].done == true ? 'text-decoration-line-through' : ''"> {{
+                                    todo.text }}
+                                </div>
 
                                 <div>
-
+                                    <button class="btn btn-sm btn-primary py-1 px-3" @click="todoBarred(index)"> <i
+                                            class="fas fa-check text-white"></i>
+                                    </button>
                                 </div>
                             </li>
                         </ul>

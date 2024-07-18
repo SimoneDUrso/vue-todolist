@@ -21,4 +21,8 @@ h2 {
     background-color: rgb(121, 149, 160);
 }
 
+.bb-white {
+    border-bottom: 1px solid white;
+}
+
 ul li {}

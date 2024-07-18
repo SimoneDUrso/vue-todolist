@@ -30,6 +30,9 @@ createApp({
     },
 
     methods: {
-
+        todoBarred(index) {
+            this.todos[index].done = true;
+            console.log(this.todos[index].done)
+        }
     }
 }).mount("#app")
