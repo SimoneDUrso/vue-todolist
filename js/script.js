@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            todo: [
+            todos: [
                 {
                     text: "hyperX",
                     done: false

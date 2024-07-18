@@ -33,7 +33,13 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="list-unstyled">
-                            <li></li>
+                            <li v-for="todo, index in todos">
+                                <div> {{ todo.text }} </div>
+
+                                <div>
+
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
