@@ -33,6 +33,10 @@ createApp({
         todoBarred(index) {
             this.todos[index].done = true;
             console.log(this.todos[index].done)
+        },
+
+        deleteTodo(index) {
+            this.todos.splice(index, 1);
         }
     }
 }).mount("#app")
