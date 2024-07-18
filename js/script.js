@@ -36,7 +36,9 @@ createApp({
         },
 
         deleteTodo(index) {
-            this.todos.splice(index, 1);
+            if (confirm("Sei sicuro di voler eliminare questa Todo?")) {
+                this.todos.splice(index, 1);
+            }
         }
     }
 }).mount("#app")
