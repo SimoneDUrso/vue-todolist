@@ -32,3 +32,9 @@ ul li {
 ul li:last-child {
     border-bottom: none;
 }
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+}
