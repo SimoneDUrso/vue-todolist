@@ -17,12 +17,18 @@ h2 {
 .container {
     width: 1200px;
     margin: 50px auto;
-    height: 600px;
     background-color: rgb(121, 149, 160);
+    padding: 20px;
 }
 
 .bb-white {
     border-bottom: 1px solid white;
 }
 
-ul li {}
+ul li {
+    padding: 10px;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
